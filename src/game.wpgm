@@ -1,6 +1,5 @@
 import wollok.game.*
-import hector.*
-import cultivos.*
+import niveles.*
 
 program farmville {
 	//  CONFIG	
@@ -9,10 +8,21 @@ program farmville {
 	game.width(10)
 	game.ground("ground.png")
 
-	//  VISUALES
- 	game.addVisualCharacter(hector)
- 	game.addVisualIn(new Maiz(), game.at(1, 1))
- 	
+	// configuración, me la da el nivel
+	nivel1.configurar()
+		
  	//  COMIENZA
 	game.start()
+	
 }
+
+
+
+
+
+
+
+
+
+
+
